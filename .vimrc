@@ -5,6 +5,10 @@ set rtp+=$GOROOT/misc/vim
 " Better colorscheme for terminals
 colorscheme koehler
 
+" Some custom commands
+command XmlFormat %!xmllint --format -
+
+
 " No VI compatibility
 set nocompatible
 set expandtab
@@ -20,6 +24,10 @@ set nobackup
 set noswapfile
 set number
 set autoindent
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=0
 
 " Allow normal use of backspace.
 set backspace=eol,indent,start
