@@ -1,7 +1,5 @@
-colorscheme wombat
-set guifont=DejaVu\ Sans\ mono\ 12
-" No toolbar plx.
-set guioptions-=T
-
-menu Buffers.-Sep- :
-menu Buffers.Delete\ all\ buffers :bufdo :bdelete<CR>
+colorscheme github
+set guifont=DejaVu\ Sans\ mono\ 10
+menu &Custom.Delete\ all\ buffers :bufdo :bdelete<CR>
+vmenu &Custom.Text\ operations.Sort\ alphabetically :!sort<CR>
+vmenu &Custom.Text\ operations.Unique\ occurences :!sort \| uniq<CR>
