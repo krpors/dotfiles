@@ -1,6 +1,6 @@
-URxvt*transparent:false
-URxvt*tintColor:blue
-!URxvt*shading:40
+URxvt*transparent:true
+URxvt*tintColor:white
+URxvt*shading:15
 URxvt*saveLines:12000
 URxvt*foreground:White
 URxvt*background:Black
@@ -8,8 +8,9 @@ URxvt*background:Black
 !URxvt*font:xft:Consolas:size=10
 !URxvt*boldFont:xft:Consolas:size=10:style=Bold
 
-URxvt*font:xft:DejaVu Sans Mono:size=10
-URxvt*boldFont:xft:DejaVu Sans Mono:size=10:style=Bold
+URxvt.font:     xft:dejavu sans mono:size=11:antialias=true
+URxvt.boldFont: xft:dejavu sans mono:bold:size=11:antialias=true
+URxvt.letterSpace: -1
 
 URxvt*color4:RoyalBlue
 URxvt*color12:RoyalBlue
@@ -17,3 +18,4 @@ URxvt*scrollBar:false
 URxvt*scrollBar_right:false
 URxvt*scrollstyle:rxvt
 
+XTerm*termName: xterm-256color
