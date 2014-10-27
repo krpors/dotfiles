@@ -6,7 +6,7 @@ set rtp+=$GOROOT/misc/vim
 " manage plugin bundles or some shit
 call pathogen#infect()
 
-colorscheme solarized
+colorscheme molokai
 
 " Some custom commands
 command XmlFormat %!xmllint --format -
