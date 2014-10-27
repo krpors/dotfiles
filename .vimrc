@@ -2,12 +2,14 @@
 filetype off
 set rtp+=$GOROOT/misc/vim
 
-" Better colorscheme for terminals
-colorscheme koehler
+" For pathogen.vim (https://github.com/tpope/vim-pathogen) to easily
+" manage plugin bundles or some shit
+call pathogen#infect()
+
+colorscheme solarized
 
 " Some custom commands
 command XmlFormat %!xmllint --format -
-
 
 " No VI compatibility
 set nocompatible
@@ -55,7 +57,3 @@ imap <C-@> <C-Space>
 
 filetype plugin indent on
 syntax on
-
-" For pathogen.vim (https://github.com/tpope/vim-pathogen) to easily
-" manage plugin bundles or some shit
-call pathogen#infect()
