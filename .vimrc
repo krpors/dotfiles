@@ -1,21 +1,28 @@
-" This fixes an rtp issue with the Go vim scripts
-filetype off
-set rtp+=$GOROOT/misc/vim
-
-" For pathogen.vim (https://github.com/tpope/vim-pathogen) to easily
-" manage plugin bundles or some shit
-call pathogen#infect()
-
-colorscheme molokai
-
-" Some custom commands
-command XmlFormat %!xmllint --format -
-
-" No VI compatibility
+" =============================================================================
+" VUNDLE SPECIFICS
+" =============================================================================
 set nocompatible
-set expandtab
-set sw=4
-set ts=4
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+filetype plugin indent on
+
+Plugin 'rust-lang/rust.vim'
+
+" =============================================================================
+" CUSTOM SETTINGS
+" =============================================================================
+
+" Better colorscheme for terminals
+colorscheme koehler
+
+" Tab stops etc.
+set noexpandtab
+set shiftwidth=4
+set tabstop=4
+
 set autowrite " for :make etc.
 set nowrap
 set smartcase
@@ -38,13 +45,10 @@ set comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,bO:///,O://
 " Save only these things in sessions:
 set sessionoptions=blank,buffers,folds,help,options,tabpages,winsize,sesdir
 
-" PER FILE TYPE SETTINGS
-" Tab stops etc.
-autocmd FileType go setlocal noexpandtab
+" =============================================================================
+" KEY MAPPINGS 
+" =============================================================================
 
-
-" KEY MAPPINGS
-"
 " Map control b to execute makefile.
 map <C-b> :make!<CR>
 " Execute the current file by F12. Useful for scripts like python/bash.
@@ -55,5 +59,7 @@ map \t :NERDTreeToggle<CR>
 imap <C-Space> <C-x><C-o>
 imap <C-@> <C-Space>
 
-filetype plugin indent on
-syntax on
+" =============================================================================
+" COMMANDS
+" =============================================================================
+command XmlFormat %!xmllint --format -
