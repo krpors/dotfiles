@@ -7,9 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'rust-lang/rust.vim'
-Plugin 'fatih/vim-go'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/syntastic'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -49,6 +47,10 @@ set comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,bO:///,O://
 " Save only these things in sessions:
 set sessionoptions=blank,buffers,folds,help,options,tabpages,winsize,sesdir
 
+" Always display tabs, displayed differently using some fancy glyphs
+set list
+set listchars=tab:»·,trail:~
+
 " =============================================================================
 " KEY MAPPINGS 
 " =============================================================================
@@ -67,3 +69,4 @@ imap <C-@> <C-Space>
 " COMMANDS
 " =============================================================================
 command XmlFormat %!xmllint --format -
+command RemoveTrailingWhiteSpace %s/\s\+$//
