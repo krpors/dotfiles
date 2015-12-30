@@ -14,7 +14,7 @@ filetype plugin indent on
 
 
 " =============================================================================
-" CUSTOM SETTINGS
+" CUSTOM VIM ONLY SETTINGS
 " =============================================================================
 
 " Better colorscheme for terminals
@@ -49,10 +49,18 @@ set sessionoptions=blank,buffers,folds,help,options,tabpages,winsize,sesdir
 
 " Always display tabs, displayed differently using some fancy glyphs
 set list
-set listchars=tab:»·,trail:~
+set listchars=tab:»\ ,trail:~
+" remember this one: ·
+
+" Ignore files from wildcard search (mostly binaries)
+set wildignore+=*.o,*.so,*.swp,*.zip,*.tar.gz,*.bin,*.exe
 
 " =============================================================================
-" KEY MAPPINGS 
+" PLUGIN OPTIONS
+" =============================================================================
+
+" =============================================================================
+" KEY MAPPINGS
 " =============================================================================
 
 " Map control b to execute makefile.
