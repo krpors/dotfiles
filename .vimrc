@@ -8,6 +8,7 @@ call vundle#begin()
 
 Plugin 'rust-lang/rust.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 filetype plugin indent on
