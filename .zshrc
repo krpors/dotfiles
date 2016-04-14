@@ -42,10 +42,14 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 export TMOUT=0
 export TERM=xterm
 export PATH=$PATH:~/bin/
+export GOPATH=C:\\Users\\av13ui\\Development\\go
 
 autoload -U colors && colors
-PROMPT="%{$fg_bold[green]%}%/%{$fg_bold[red]%} %D{%Y-%m-%f} %* %{$fg_bold[yellow]%}(%?)
-%{$fg_bold[white]%}$ %{$reset_color%}"
 
-#PROMPT='$fg_bold[blue][$fg[red]%T$fg_bold[blue]]$fg_bold[blue][$fg[yellow]%n@%m:%~$fg[yellow]$(rvm_prompt_info)$fg_bold[blue]]$reset_color
-#$ '
+prompt_time="$fg_bold[white][$fg[red]%T$fg_bold[white]]"
+prompt_host="$fg_bold[white][$fg_bold[green]%n@%m$fg_bold[white]]"
+prompt_cwd="$fg_bold[white]:%~"
+prompt_exitcode=" $bg[green]$fg[black](%?)"
+PS1="${prompt_time}${prompt_host}${prompt_cwd}${prompt_exitcode}$reset_color
+$ "
+
