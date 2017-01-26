@@ -79,3 +79,4 @@ imap <C-@> <C-Space>
 " =============================================================================
 command XmlFormat %!xmllint --format -
 command RemoveTrailingWhiteSpace %s/\s\+$//
+command JsonIndent %!python -m json.tool
