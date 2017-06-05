@@ -14,6 +14,9 @@ bindkey '^[[2~' overwrite-mode
 bindkey '\e[H' beginning-of-line
 bindkey '\e[F' end-of-line
 
+# Allow CTRL-R
+bindkey -e
+
 
 alias l='ls -la --group-directories-first --color=always'
 alias grep='grep --color=always'
@@ -42,7 +45,6 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 export TMOUT=0
 export TERM=xterm
 export PATH=$PATH:~/bin/
-export GOPATH=C:\\Users\\av13ui\\Development\\go
 
 autoload -U colors && colors
 
