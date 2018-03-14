@@ -18,6 +18,21 @@ disk "/" {
 	format = "/ = %percentage_used used"
 }
 
+battery all {
+	format = "BATT: %percentage"
+}
+
+wireless _first_ {
+}
+
+tztime local {
+	format = "%Y-%m-%d %H:%M:%S"
+}
+
+
 order += "load"
 order += "disk /"
+order += "battery all"
 order += "ethernet _first_"
+order += "wireless _first_"
+order += "tztime local"
