@@ -1,22 +1,27 @@
+! All configuration for urxvt. Be sure to install rxvt-unicode-256color for 
+! more colors etc.
 URxvt*transparent:true
 URxvt*tintColor:white
 URxvt*shading:15
 URxvt*saveLines:12000
 URxvt*foreground:White
 URxvt*background:Black
-
-!URxvt*font:xft:Consolas:size=10
-!URxvt*boldFont:xft:Consolas:size=10:style=Bold
-!URxvt.font:     xft:dejavu sans mono:size=11:antialias=true
-!URxvt.boldFont: xft:dejavu sans mono:bold:size=11:antialias=true
-URxvt.font:     xft:noto mono:size=11:antialias=true
-URxvt.boldFont: xft:noto mono:bold:size=11:antialias=true
-URxvt.letterSpace: -1
-
+URxvt*font: xft:Noto Mono:pixelsize=15:antialias=true
+URxvt*letterSpace: -1
+URxvt*lineSpace: 1
 URxvt*color4:RoyalBlue
 URxvt*color12:RoyalBlue
 URxvt*scrollBar:false
 URxvt*scrollBar_right:false
 URxvt*scrollstyle:rxvt
+URxvt*cursorBlink: true
 
+!XTerm configuration.
 XTerm*termName: xterm-256color
+XTerm*background: Black
+XTerm*foreground: White
+XTerm*faceName: Noto mono
+XTerm*faceSize: 11
+XTerm*cursorBlink: true
+XTerm*savelines: 4096
+

@@ -29,6 +29,7 @@ set tabstop=4
 
 set autowrite " for :make etc.
 set nowrap
+set ignorecase " smart-case searching
 set smartcase
 set showmatch
 set incsearch
