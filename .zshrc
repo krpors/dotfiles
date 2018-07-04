@@ -11,8 +11,8 @@ bindkey '^[[B' down-line-or-search
 bindkey '^[[C' forward-char
 bindkey '^[[2~' overwrite-mode
 
-bindkey '\e[H' beginning-of-line
-bindkey '\e[F' end-of-line
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
 
 # Allow CTRL-R
 bindkey -e
@@ -43,7 +43,6 @@ setopt HIST_VERIFY               # Don't execute immediately upon history expans
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 
 export TMOUT=0
-export TERM=xterm
 export PATH=$PATH:~/bin/
 
 autoload -U colors && colors
