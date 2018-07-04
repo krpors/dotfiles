@@ -19,8 +19,8 @@ filetype plugin indent on
 " CUSTOM VIM ONLY SETTINGS
 " =============================================================================
 
-" Better colorscheme for terminals
-colorscheme koehler
+" Better colorscheme for terminals (256 colors)
+colorscheme spacegray
 
 " Tab stops etc.
 set noexpandtab
@@ -82,3 +82,4 @@ imap <C-@> <C-Space>
 command XmlFormat %!xmllint --format -
 command RemoveTrailingWhiteSpace %s/\s\+$//
 command JsonIndent %!python -m json.tool
+command -range FoldText <line1>,<line2>!fold -s
