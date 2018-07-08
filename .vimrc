@@ -16,7 +16,6 @@ Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
 
-
 " =============================================================================
 " CUSTOM VIM ONLY SETTINGS
 " =============================================================================
@@ -45,6 +44,9 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=0
 
+" Italicize comment strings in files.
+highlight Comment cterm=italic
+
 " Allow normal use of backspace.
 set backspace=eol,indent,start
 " Apparently for Doxygen style comments:
@@ -58,11 +60,7 @@ set listchars=tab:»\ ,trail:~
 " remember this one: ·
 
 " Ignore files from wildcard search (mostly binaries)
-set wildignore+=*.o,*.so,*.swp,*.zip,*.tar.gz,*.bin,*.exe
-
-" =============================================================================
-" PLUGIN OPTIONS
-" =============================================================================
+set wildignore+=*.o,*.so,*.swp,*.zip,*.tar.gz,*.bin,*.exe,*.d
 
 " =============================================================================
 " KEY MAPPINGS

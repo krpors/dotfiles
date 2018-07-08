@@ -15,9 +15,7 @@ URxvt*scrollBar:false
 URxvt*scrollBar_right:false
 URxvt*scrollstyle:rxvt
 URxvt*cursorBlink: true
-URxvt*termName: rxvt-unicode-256color
-
-Rxvt*termName: rxvt-unicode-256color
+URxvt*termName: xterm-256color
 
 !XTerm configuration.
 XTerm*termName: xterm-256color
@@ -27,4 +25,3 @@ XTerm*faceName: Noto mono
 XTerm*faceSize: 11
 XTerm*cursorBlink: true
 XTerm*savelines: 4096
-
