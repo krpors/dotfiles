@@ -15,7 +15,6 @@ URxvt*scrollBar:false
 URxvt*scrollBar_right:false
 URxvt*scrollstyle:rxvt
 URxvt*cursorBlink: true
-URxvt*termName: xterm-256color
 
 !XTerm configuration.
 XTerm*termName: xterm-256color

@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 printf "This script installs the files in this repository into the current\n"
 printf "user's home directory.\n"
 printf "\n"
