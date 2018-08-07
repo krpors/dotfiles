@@ -1,5 +1,6 @@
 " =============================================================================
 " VUNDLE SPECIFICS
+"
 " =============================================================================
 set nocompatible
 filetype off
@@ -12,6 +13,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fatih/vim-go'
+Plugin 'godlygeek/tabular'
 
 call vundle#end()
 filetype plugin indent on
@@ -43,6 +45,9 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=0
+set formatoptions+=j  " join comments properly
+
+match ErrorMsg '\s\+$' " trailing whitespace are highlighted as errors
 
 " Italicize comment strings in files.
 highlight Comment cterm=italic
@@ -73,7 +78,7 @@ map <F12> :!./%<CR>
 " Map the NERDTree to \t
 map \t :NERDTreeToggle<CR>
 " Omnicompletion set to ctrl space plx
-imap <C-Space> <C-x><C-o>
+imap <C-Space> <C-x><C-p>
 imap <C-@> <C-Space>
 
 " =============================================================================
