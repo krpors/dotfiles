@@ -12,11 +12,21 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
+Plugin 'sirver/ultisnips'
+"Plugin 'honza/vim-snippets'
 
 call vundle#end()
 filetype plugin indent on
+
+" =============================================================================
+" Ultisnips, for code snippets.
+" =============================================================================
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+let g:UltiSnipsEditSplit="vertical"
 
 " =============================================================================
 " CUSTOM VIM ONLY SETTINGS
@@ -75,11 +85,8 @@ set wildignore+=*.o,*.so,*.swp,*.zip,*.tar.gz,*.bin,*.exe,*.d
 map <C-b> :make!<CR>
 " Execute the current file by F12. Useful for scripts like python/bash.
 map <F12> :!./%<CR>
-" Map the NERDTree to \t
+
 map \t :NERDTreeToggle<CR>
-" Omnicompletion set to ctrl space plx
-imap <C-Space> <C-x><C-p>
-imap <C-@> <C-Space>
 
 " =============================================================================
 " COMMANDS
