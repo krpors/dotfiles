@@ -94,7 +94,7 @@ map <Leader>t :NERDTreeToggle<CR>
 " =============================================================================
 " COMMANDS
 " =============================================================================
-command XmlFormat %!xmllint --format -
-command RemoveTrailingWhiteSpace %s/\s\+$//
-command JsonIndent %!python -m json.tool
-command -range FoldText <line1>,<line2>!fold -s
+command! XmlFormat %!xmllint --format -
+command! RemoveTrailingWhiteSpace %s/\s\+$//
+command! JsonIndent %!python -m json.tool
+command! -range FoldText <line1>,<line2>!fold -s
