@@ -1,3 +1,7 @@
+" Before anything else (like loading plugins) we will set our <Leader>
+" key to the spacebar. This character is never used in normal mode anyway.
+let mapleader = " "
+
 " =============================================================================
 " VUNDLE SPECIFICS
 "
@@ -12,6 +16,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 "Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
 Plugin 'sirver/ultisnips'
@@ -84,7 +89,7 @@ map <C-b> :make!<CR>
 " Execute the current file by F12. Useful for scripts like python/bash.
 map <F12> :!./%<CR>
 
-map \t :NERDTreeToggle<CR>
+map <Leader>t :NERDTreeToggle<CR>
 
 " =============================================================================
 " COMMANDS
