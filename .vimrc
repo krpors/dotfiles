@@ -15,17 +15,15 @@ Plugin 'scrooloose/nerdtree'
 "Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
 Plugin 'sirver/ultisnips'
-"Plugin 'honza/vim-snippets'
 
 call vundle#end()
 filetype plugin indent on
 
-" =============================================================================
-" Ultisnips, for code snippets.
-" =============================================================================
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+let g:UltiSnipsJumpBackwardTrigger="<C-Tab>"
+
+" If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
 " =============================================================================
