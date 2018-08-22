@@ -7,5 +7,7 @@ menu &Custom.Indent\ JSON :JsonIndent<CR>
 vmenu &Custom.Text\ operations.Sort\ alphabetically :!sort<CR>
 vmenu &Custom.Text\ operations.Unique\ occurences :!sort \| uniq<CR>
 
+highlight Comment gui=italic
+
 " Hide toolbars
 set guioptions-=T
