@@ -8,7 +8,7 @@ printf "    %s\n" ${HOME}
 printf "\n"
 
 function install {
-	rsync -a --exclude="install.sh" --exclude=".git" . ~/
+	rsync -a --exclude="install.sh" --exclude=".zshenv" --exclude=".git" . ~/
 }
 
 read -p "Continue? (y/n): " cont

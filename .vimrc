@@ -38,6 +38,13 @@ let g:UltiSnipsEditSplit="vertical"
 " Better colorscheme for terminals (256 colors)
 colorscheme spacegray
 
+" Omnicompletion cruft. No preview window, and don't insert text by default,
+" until we choose to do so.
+set omnifunc=syntaxcomplete#Complete
+set completeopt-=preview
+set completeopt+=noinsert
+set tags+=~/.vim/tags/usr_include.tags
+
 " Tab stops etc.
 set noexpandtab
 set shiftwidth=4
@@ -88,7 +95,10 @@ set wildignore+=*.o,*.so,*.swp,*.zip,*.tar.gz,*.bin,*.exe,*.d
 map <C-b> :make!<CR>
 " Execute the current file by F12. Useful for scripts like python/bash.
 map <F12> :!./%<CR>
-
+" In insert mode, ctrl-space is omnicompletion. Requires also the mapping of
+" C-@ to interpret the space char correctly.
+inoremap <C-Space> <C-x><C-o>
+inoremap <C-@> <C-x><C-o>
 map <Leader>t :NERDTreeToggle<CR>
 
 " =============================================================================
