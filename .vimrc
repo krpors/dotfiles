@@ -81,7 +81,7 @@ set sessionoptions=blank,buffers,folds,help,options,tabpages,winsize,sesdir
 
 " Always display tabs, displayed differently using some fancy glyphs
 set list
-set listchars=tab:»\ ,trail:~
+set listchars=tab:\┆\ ,trail:~
 " remember this one: ·
 
 " Ignore files from wildcard search (mostly binaries)
