@@ -1,0 +1,13 @@
+{
+    "editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "boundary",
+	"editor.cursorStyle": "block",
+	"files.exclude": {
+		"**/.o": true
+	},
+	"terminal.external.linuxExec": "rxvt-unicode",
+	"terminal.integrated.fontFamily": "Noto Mono",
+	"terminal.integrated.rendererType": "dom",
+	"workbench.colorTheme": "Monokai"
+}
