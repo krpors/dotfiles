@@ -24,7 +24,6 @@
 			"};"
 		]
 	},
-
 	"Class declaration with implementation": {
 		"prefix": "classi",
 		"body": [
@@ -55,5 +54,14 @@
 	"Cout" : {
 		"prefix": "cout",
 		"body": "std::cout << ${0} << std::endl;"
+	},
+	"Header guard" : {
+		"prefix": "guard",
+		"body": [
+			"#ifndef ${HeaderName}",
+			"#define ${HeaderName}",
+			"\n$0\n",
+			"#endif // ${HeaderName}"
+		]
 	}
 }

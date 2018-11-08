@@ -1,13 +1,21 @@
 {
     "editor.detectIndentation": false,
 	"editor.insertSpaces": false,
-	"editor.renderWhitespace": "boundary",
+	"editor.renderWhitespace": "all",
 	"editor.cursorStyle": "block",
 	"files.exclude": {
-		"**/.o": true
+		"**/*.d": true,
+		"**/*.o": true
 	},
 	"terminal.external.linuxExec": "rxvt-unicode",
 	"terminal.integrated.fontFamily": "Noto Mono",
 	"terminal.integrated.rendererType": "dom",
-	"workbench.colorTheme": "Monokai"
+	"workbench.colorTheme": "Monokai",
+	"debug.inlineValues": true,
+	"editor.renderLineHighlight": "all",
+	"editor.rulers": [
+		80,
+		120
+	],
+	"files.trimTrailingWhitespace": true
 }
