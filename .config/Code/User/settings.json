@@ -1,6 +1,5 @@
 {
-    "editor.detectIndentation": false,
-	"editor.insertSpaces": false,
+	"editor.detectIndentation": true,
 	"editor.renderWhitespace": "all",
 	"editor.cursorStyle": "block",
 	"files.exclude": {
@@ -17,5 +16,14 @@
 		80,
 		120
 	],
-	"files.trimTrailingWhitespace": true
+	"files.trimTrailingWhitespace": true,
+	"[cpp]": {
+		"editor.autoIndent": false,
+		"editor.useTabStops": true,
+		"editor.tabSize": 4
+	},
+	"[python]": {
+		"editor.useTabStops": false,
+		"editor.tabSize": 4
+	}
 }
