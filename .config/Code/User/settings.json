@@ -25,5 +25,22 @@
 	"[python]": {
 		"editor.useTabStops": false,
 		"editor.tabSize": 4
-	}
+	},
+	"todohighlight.keywords": [
+		{
+			"text": "BUG",
+			"backgroundColor": "red",
+			"color": "white"
+		},
+		{
+			"text": "FIXME",
+			"backgroundColor": "orange",
+			"color": "white",
+		},
+		{
+			"text": "TODO",
+			"backgroundColor": "yellow",
+			"color": "black",
+		}
+	]
 }

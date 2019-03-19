@@ -1,0 +1,5 @@
+[alias]
+	tree = log --graph --decorate
+	stats = shortlog -s -n --all --no-merges
+[push]
+	default = simple
