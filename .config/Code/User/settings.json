@@ -43,6 +43,12 @@
 			"text": "TODO",
 			"backgroundColor": "yellow",
 			"color": "black",
+		},
+		{
+			"text": "// ==",
+			"backgroundColor": "gray",
+			"color": "white",
+			"isWholeLine": true
 		}
 	],
 	"C_Cpp.suggestSnippets": false
