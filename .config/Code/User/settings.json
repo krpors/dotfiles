@@ -42,5 +42,6 @@
 			"backgroundColor": "yellow",
 			"color": "black",
 		}
-	]
+	],
+	"files.insertFinalNewline": true
 }
