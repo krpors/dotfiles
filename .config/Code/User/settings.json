@@ -17,6 +17,8 @@
 		120
 	],
 	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
 	"[cpp]": {
 		"editor.autoIndent": false,
 		"editor.useTabStops": true,
@@ -43,6 +45,5 @@
 			"color": "black",
 		}
 	],
-	"files.insertFinalNewline": true,
-	"files.trimFinalNewlines": true
+	"C_Cpp.suggestSnippets": false
 }
