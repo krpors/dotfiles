@@ -66,6 +66,10 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+
 # focus the child container
 #bindsym $mod+d focus child
 
@@ -173,3 +177,4 @@ client.urgent           #2d2d2d #2d2d2d #dcdcdc #900000
 # Wallpaper during load. This requires 'feh' obviously.
 ################################################################################
 exec_always --no-startup-id feh -z --bg-fill ~/Pictures/wallpapers/*
+exec --no-startup-id nm-applet
