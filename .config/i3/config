@@ -90,6 +90,10 @@ set $ws8  "08: other"
 set $ws9  "09: other"
 set $ws10 "10: other"
 
+# Put certain workspaces on monitors by default.
+workspace "01: term" output eDP-1-1
+workspace "02: web" output HDMI-0
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -178,5 +182,5 @@ client.urgent           #2d2d2d #2d2d2d #dcdcdc #900000
 ################################################################################
 # Wallpaper during load. This requires 'feh' obviously.
 ################################################################################
-exec_always --no-startup-id feh -z --bg-fill ~/Pictures/wallpapers/*
+exec_always --no-startup-id feh -z --bg-fill ~/Pictures/wallpapers/
 exec --no-startup-id nm-applet
