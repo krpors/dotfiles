@@ -1,4 +1,5 @@
 function fish_greeting
-	echo "HI THAR!"
-	echo
+	if test -e ~/.cache/feed_motd
+		command cat ~/.cache/feed_motd
+	end
 end

@@ -1,7 +1,7 @@
 function fish_prompt
 	set st $status
 	set_color --bold brwhite
-	echo -n [(date "+%H:%m")]
+	echo -n [(date "+%H:%M")]
 	set_color --bold yellow
 	echo -n " "(prompt_hostname)
 	set_color --bold brgreen
@@ -15,6 +15,5 @@ function fish_prompt
 	echo " ("$st")"
 
 	set_color normal
-	echo -n '╰⟶ '
+	echo -n '$ '
 end
-
