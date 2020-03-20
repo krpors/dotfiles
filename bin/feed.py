@@ -20,8 +20,16 @@ if __name__ == '__main__':
         for item in items:
             title = item.findall('title')[0].text
             pubdate = parsedt(item.findall('pubDate')[0].text)
+            categories = item.findall('category')
 
-            rssItems.append((pubdate, title))
+            nuShop = False
+            for cat in categories:
+                if cat.text == "NUshop":
+                    nuShop = True
+                    break
+
+            if not nuShop:
+                rssItems.append((pubdate, title))
 
     except Exception as e:
         print(e)
