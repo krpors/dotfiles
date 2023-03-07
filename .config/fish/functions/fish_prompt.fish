@@ -12,7 +12,9 @@ function fish_prompt
 	else
 		set_color --bold green
 	end
-	echo " ("$st")"
+	echo -n " ("$st")"
+	set_color normal
+	echo (fish_git_prompt)
 
 	set_color normal
 	echo -n '$ '
