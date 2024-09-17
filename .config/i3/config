@@ -11,13 +11,15 @@ font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 
 # Start a terminal. Be sure to install rxvt-unicode-256color
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec exo-open --launch TerminalEmulator
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec "rofi -show combi -combi-modi \\"window,drun,ssh\\" -modi combi"
+
 
 bindsym $mod+p exec ~/bin/lock.sh
 
@@ -189,5 +191,8 @@ client.urgent           #2d2d2d #2d2d2d #dcdcdc #900000
 # Wallpaper during load. This requires 'feh' obviously.
 ################################################################################
 exec_always --no-startup-id feh -z --bg-fill ~/Pictures/wallpapers/
+
+# Swap mouse buttons
+exec_always --no-startup-id xmodmap -e "pointer = 3 2 1 "
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet

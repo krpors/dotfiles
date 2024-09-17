@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import random
 import sys
@@ -12,4 +12,4 @@ if __name__ == "__main__":
         r = int((random.random() * (max-min)) + min)
         passwd += chr(r)
 
-    print passwd
+    print(passwd)
